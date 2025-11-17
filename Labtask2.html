@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile | AIUB</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a2a6c, #2c3e50);
+            color: white;
+            text-align: center;
+            padding: 2.5em 0;
+            margin-bottom: 2.5em;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .university-name {
+            font-size: 2em;
+            margin-bottom: 0.3em;
+            font-weight: 700;
+        }
+
+        .faculty-name {
+            font-size: 1.5em;
+            margin-bottom: 0.3em;
+            font-weight: 600;
+        }
+
+        .department-name {
+            font-size: 1.2em;
+            margin-bottom: 0.3em;
+        }
+
+        .course-name {
+            font-size: 1.1em;
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        .profile-container {
+            width: 85%;
+            max-width: 900px;
+            margin: 0 auto 3em;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+            padding: 2.5em;
+            border: 1px solid #e1e8ed;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-container:hover {
+            transform: translateY(-5px);
+        }
+
+        .profile-header {
+            text-align: center;
+            margin-bottom: 2em;
+            padding-bottom: 1.5em;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        .student-name {
+            font-size: 2.2em;
+            color: #2c3e50;
+            margin-bottom: 0.3em;
+        }
+
+        .student-id {
+            font-size: 1.3em;
+            color: #7f8c8d;
+            margin-bottom: 0.5em;
+        }
+
+        .profile-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2em;
+        }
+
+        @media (min-width: 768px) {
+            .profile-content {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .student-photo {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #3498db;
+            background-color: #ecf0f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #7f8c8d;
+            font-size: 1.1em;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .photo-placeholder {
+            font-size: 0.9em;
+            margin-top: 0.8em;
+            color: #95a5a6;
+            font-style: italic;
+        }
+
+        .student-info {
+            flex: 1;
+        }
+
+        .info-section {
+            margin-bottom: 1.8em;
+            padding: 1.2em;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .info-title {
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin-bottom: 0.7em;
+            padding-bottom: 0.3em;
+            border-bottom: 1px solid #e1e8ed;
+        }
+
+        .info-content {
+            line-height: 1.7;
+            font-size: 1.05em;
+        }
+
+        .department {
+            color: #3498db;
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8em;
+            margin-top: 0.5em;
+        }
+
+        .skill-tag {
+            background-color: #3498db;
+            color: white;
+            padding: 0.4em 1em;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #2c3e50, #1a2a6c);
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+            margin-top: 3em;
+        }
+
+        .footer-text {
+            font-size: 0.95em;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="university-name">AMERICAN INTERNATIONAL UNIVERSITY BANGLADESH (AIUB)</h1>
+        <h2 class="faculty-name">Faculty of Science and Technology (FST)</h2>
+        <h3 class="department-name">Department of Computer Science (CS)</h3>
+        <p class="course-name">Course: Web Technologies</p>
+    </header>
+
+    <main>
+        <section class="profile-container">
+            <div class="profile-header">
+                <h2 class="student-name">Mehadi Hasan Mithun</h2>
+                <p class="student-id">Student ID: 22-45997-1</p>
+            </div>
+            
+            <div class="profile-content">
+                <div class="image-container">
+                    <div class="student-photo">
+                        No Photo Available
+                    </div>
+                    <p class="photo-placeholder">Image placeholder</p>
+                </div>
+                
+                <div class="student-info">
+                    <div class="info-section">
+                        <h3 class="info-title">Department</h3>
+                        <p class="info-content department">Computer Science</p>
+                    </div>
+                    
+                    <div class="info-section">
+                        <h3 class="info-title">About Me</h3>
+                        <p class="info-content">
+                            I am a dedicated Computer Science student at AIUB with a passion for web technologies 
+                            and software development. My academic journey has provided me with a strong foundation 
+                            in programming, algorithms, and system design. I'm particularly interested in full-stack 
+                            development and creating user-friendly applications that solve real-world problems.
+                        </p>
+                    </div>
+                    
+                    <div class="info-section">
+                        <h3 class="info-title">Skills</h3>
+                        <p class="info-content">
+                            I have developed skills in various technologies through coursework and personal projects:
+                        </p>
+                        <div class="skills-list">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">MySQL</span>
+                        </div>
+                    </div>
+                    
+                    <div class="info-section">
+                        <h3 class="info-title">Academic Focus</h3>
+                        <p class="info-content">
+                            Currently focusing on web technologies, database management systems, and software engineering 
+                            principles. I'm eager to apply my knowledge in practical projects and continue learning 
+                            about emerging technologies in the field of computer science.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-text">© 2023 American International University Bangladesh. All rights reserved.</p>
+        <p class="footer-text">Lab Task 01: Styled Student Profile Page | Web Technologies</p>
+    </footer>
+</body>
+</html>
