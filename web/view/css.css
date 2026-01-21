@@ -1,0 +1,80 @@
+
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    color: gray;
+    margin: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: rebeccapurple;
+  }
+  
+  img {
+    position: absolute;
+    left: 500px;
+    top: 200px;
+    width: 1000px;
+    height: 600px;
+    z-index: -1;
+  }
+  
+  .input_border {
+    width: 250px;
+    height: 30px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  fieldset {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  legend {
+    font-weight: bold;
+  }
+  
+  #edu {
+    color: red;
+  }
+  
+  .note {
+    color: black;
+    background-color:red;
+    width: 500px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid black;
+    overflow-y: auto;
+    margin-bottom: 15px;
+  }
+  
+  .btnsubmit {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  div.sticky {
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color:gainsboro;
+    border: 2px solid #4CAF50;
+  }
+  .red_validate {
+    display: none;
+    color: red;
+    font-size: 0.9em;
+  }
+
+
+  
